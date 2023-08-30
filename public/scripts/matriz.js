@@ -1,5 +1,8 @@
 // Pegando o elemento do Canvas
 
+$('#app').fadeOut()
+
+
 const c = document.getElementById("idCanvas");
 console.log(c)
 
@@ -84,8 +87,9 @@ function draw() {
 
     setInterval(function () {
         $('#idCanvas').fadeOut()
+        $('#app').fadeIn()
         isRunning = false
-    }, 8000);
+    }, 1000);
   
  
   

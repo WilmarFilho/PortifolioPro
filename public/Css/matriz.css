@@ -1,7 +1,292 @@
+/*Responsividade*/
+
+@media (max-width: 475.98px) {
+
+    body {
+        background-image: url('../Assets/img/bg13.jpg') !important;
+       
+        
+    
+        background-color: black !important;
+    }
+
+    html {
+
+        margin: -5px;
+    
+    }
+
+}
+
+@media (min-width: 475.99px) and (max-width: 575.98px) {
+
+    body {
+        background-image: url('../Assets/img/bg2.jpg') !important;
+       
+        background-size: cover !important;
+    
+        background-color: black !important;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    body {
+        background-image: url('../Assets/img/bg2.jpg') !important;
+       
+        background-size: cover !important;
+    
+        background-color: black !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    body {
+        background-image: url('../Assets/img/bg1.jpg') !important;
+       
+        background-size: cover !important;
+    
+        background-color: black !important;
+    }
+
+}
+
+/* Efeito Inicial  */
+
 .matriz {
     opacity: 1;
 }
 
+/*  GERAL */
+
+@font-face {
+	font-family: one;
+	src: url('../Assets/fonts/one.woff');
+}
+
+@font-face {
+	font-family: gentleman;
+	src: url('../Assets/fonts/fonte.woff');
+}
+
+.font-one {
+    font-family: 'one' !important;
+}
+
+.font-gentleman {
+    font-family: 'gentleman' !important;
+}
+
 body {
+    background-image: url('../Assets/img/bg16.jpg');
+   
+    background-position: right !important;
+
+    background-color: black !important;
+}
+
+#contato, #celleta {
+    height: 400px ;
+}
+
+#nkw {
+  background-image: url('../Assets/img/bg17.jpg');
+  background-position: unset;
+  background-size: cover;
+}
+
+#projetos, #contato {
+    
+    background-image: url('../Assets/img/bg11.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+/* Navegação */
+
+.bg-nav-custom {
+	background: rgb(0, 0, 0, .7);
+}
+
+/* Rodapé */
+
+#rodape {
     background-color: black;
 }
+
+/* Topo */
+
+.titulo-topo {
+    font-family: 'gentleman';
+    text-shadow: 0 0 1em  black;
+    font-size: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(13)  infinite alternate,
+    blink 800ms steps(13)  infinite normal;
+    border-right: 5px solid rgb(235, 226, 226);
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  @keyframes blink {
+    from {
+      border-color: rgb(235, 226, 226);
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+
+/* Projetos */
+
+#projetos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.img-projeto {
+  
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.label-projeto {
+  display: block;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+figure:hover+span {
+  opacity: 1;
+  margin-top: 8px;
+}
+
+#projetos figure {
+	border-radius: 200px;
+  border: #FFF;
+  border-style: double;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+.img-projeto:hover {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+  .btn-two {
+    color: #FFF !important;
+    transition: all 0.5s;
+    position: relative; 
+  }
+
+  .btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(241, 233, 233, 0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+
+
+  /* Contato */
+
+  .btn-one {
+    color: #FFF !important;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
