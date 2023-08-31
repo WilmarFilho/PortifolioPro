@@ -84,31 +84,66 @@
             </div>
 
             <div id='projetos' class='row align-items-center justify-content-center'>
-
-                <div class='col-12 text-center text-white'>
-                    <h2 class='titulo-projetos font-gentleman'>Projetos Recentes</h2>
-                </div>
-
-                <div class='row col-12 text-white mt-4 justify-content-center'> 
-                
-                    <div class='col-4 col-md-2 text-center m-5'>
-                        <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                        <span class='label-projeto '>NKW</span>
-                        <button class='btn btn-two font-one mt-4'>Saiba mais</button>
+                <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'>
+                    <div class='col-12 text-center text-white'>
+                        <h2 class='titulo-projetos font-gentleman'>Projetos Recentes</h2>
                     </div>
 
-                    <div class='col-4 col-md-2 text-center m-5'>
-                        <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                        <span class='label-projeto '>NKW</span>
-                        <button class='btn btn-two font-one mt-4'>Saiba mais</button>
+                    <!--<div class='row col-12 text-white mt-4 justify-content-center'> 
+                    
+                        <div class='col-4 col-md-2 text-center m-5'>
+                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
+                            <span class='label-projeto '>NKW</span>
+                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
+                        </div>
+
+                        <div class='col-4 col-md-2 text-center m-5'>
+                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
+                            <span class='label-projeto '>NKW</span>
+                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
+                        </div>
+
+                        <div class='col-4 col-md-2 text-center m-5'>
+                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
+                            <span class='label-projeto '>NKW</span>
+                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
+                        </div>
+                    
+                    </div>-->
+
+                    <ul class="ch-grid">
+                        <li>
+                            <div class="ch-item ch-img-1">
+                                <div class="ch-info">
+                                    <h3>NKW TECH</h3>
+                                    <p>por Wilmar Filho <a href="https://nkwtech.com">Saiba mais</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2">
+                                <div class="ch-info">
+                                    <h3>Caixa</h3>
+                                    <p>por Wilmar Filho <a href="https://caixa.nkwtech.com">Saiba mais</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-3">
+                                <div class="ch-info">
+                                    <h3>Festa</h3>
+                                    <p>por Wilmar Filho <a href="https://bot.nkwtech.com">Saiba mais</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class='col-12 text-center text-white'>
+                        <h3>Conta para demonstração:</h3>
+                        <p>Login: wilmarfilho32@hotmail.com</p>
+                        <p>Senha: Flamengo32</p>
                     </div>
 
-                    <div class='col-4 col-md-2 text-center m-5'>
-                        <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                        <span class='label-projeto '>NKW</span>
-                        <button class='btn btn-two font-one mt-4'>Saiba mais</button>
-                    </div>
-                
                 </div>
 
             </div>
@@ -129,29 +164,32 @@
             </div>
 
             <div id='contato' class='row align-items-center justify-content-center'>
-
-                <div class='col-12 text-center text-white'>
-                    <h2 class='titulo-projetos font-gentleman'>Contato</h2>
-                </div>
-            
-                <div class='row col-12 text-white'> 
                 
-                    <div class='col-6 text-center'>
-                        <button class='btn btn-one font-one'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</button>
-                    </div>
+                <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'> 
 
-                    <div class='col-6 text-center'>
-                        <button class='btn btn-one font-one'><i class="fa-brands fa-github me-2"></i>Github</button>
-                    </div>
-
-                    <div class='col-6 text-center mt-3'>
-                        <button class='btn btn-one font-one'><i class="fa-brands fa-instagram me-2"></i>Instagram</button>
-                    </div>
-
-                    <div class='col-6 text-center mt-3'>
-                        <button class='btn btn-one font-one'><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp</button>
+                    <div class='col-12 text-center text-white'>
+                        <h2 class='titulo-projetos font-gentleman'>Contato</h2>
                     </div>
                 
+                    <div class='row col-8 text-white mt-2'> 
+                    
+                        
+                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</button>
+                        
+
+                        
+                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-github me-2"></i>Github</button>
+                        
+
+                    
+                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-instagram me-2"></i>Instagram</button>
+                        
+
+                        
+                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp</button>
+                        
+                    
+                    </div>
                 </div>
              
             </div>
