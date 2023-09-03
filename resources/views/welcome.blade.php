@@ -11,11 +11,12 @@
         <script src="https://kit.fontawesome.com/9d7842dfbe.js" crossorigin="anonymous"></script>
 
         <!-- Fonts -->
+        
         <link rel="preconnect" href="https://fonts.bunny.net">
+        
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        
         <link href="Css/matriz.css" rel="stylesheet" />
-
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
         <!-- Styles -->
         <style>
@@ -35,48 +36,45 @@
                         <img src='Assets/img/logo.png' class='img-fluid' >
                     </a>
                     
-                    <button class="col-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <button class="col-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarSupportedContent" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav me-auto">
-
-                        </ul>
-
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ms-auto text-white">
+                    <div class="collapse navbar-collapse" id="navegacao">
+                       
+                        <ul class="navbar-nav ms-auto text-white font-one">
                            
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">{{ __('Projetos') }}</a>
+                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="m-1 nav-link btn-tree" href="#projetos">{{ __('Projetos') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">{{ __('NKW') }}</a>
+                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#nkw">{{ __('NKW') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">{{ __('Celleta') }}</a>
+                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#celleta">{{ __('Celleta') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">{{ __('Curriculo') }}</a>
+                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#contato">{{ __('Contato') }}</a>
                                     </li>
                                     
                         </ul>
+
                     </div>
                 </div>
             </nav>
+        
 
-            <div id='carrosel' class='row justify-content-center pt-5' style='height: 700px;'>
+            <div id='carrosel' class='row justify-content-center pt-5' >
 
                 
                 
-                    <div class='col-6 justify-content-center d-flex '>
+                    <div class='col-10 col-md-6 justify-content-center d-flex '>
                         <img src='assets/img/foto.png' class=''>
                     </div>
 
-                    <div class='col-6 text-center text-white  d-flex flex-column align-self-center' style='padding-right: 9rem;'>
-                        <h1 class='titulo-topo '>Desenvolvedor web</h1>
-                        <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
+                    <div class='col-10 col-md-6 text-center text-white justify-content-center  d-flex flex-column align-self-center'>
+                        <h1 class='titulo-topo justify-content-center'>Desenvolvedor web</h1>
+                        <p class='texto text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
                     </div>
 
                 
@@ -84,35 +82,13 @@
             </div>
 
             <div id='projetos' class='row align-items-center justify-content-center'>
-                <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'>
+                <div class='row col-11 pt-3 align-items-center justify-content-center caixa-contato'>
                     <div class='col-12 text-center text-white'>
                         <h2 class='titulo-projetos font-gentleman'>Projetos Recentes</h2>
                     </div>
 
-                    <!--<div class='row col-12 text-white mt-4 justify-content-center'> 
-                    
-                        <div class='col-4 col-md-2 text-center m-5'>
-                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                            <span class='label-projeto '>NKW</span>
-                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
-                        </div>
-
-                        <div class='col-4 col-md-2 text-center m-5'>
-                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                            <span class='label-projeto '>NKW</span>
-                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
-                        </div>
-
-                        <div class='col-4 col-md-2 text-center m-5'>
-                            <figure><img class='img-projeto img-fluid' src='Assets/img/teste.png'></figure>
-                            <span class='label-projeto '>NKW</span>
-                            <button class='btn btn-two font-one mt-4'>Saiba mais</button>
-                        </div>
-                    
-                    </div>-->
-
-                    <ul class="ch-grid">
-                        <li>
+                    <ul class="ch-grid row justify-content-center col-12">
+                        <li class='col-11 col-md-4'>
                             <div class="ch-item ch-img-1">
                                 <div class="ch-info">
                                     <h3>NKW TECH</h3>
@@ -120,7 +96,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class='col-11 col-md-4'>
                             <div class="ch-item ch-img-2">
                                 <div class="ch-info">
                                     <h3>Caixa</h3>
@@ -128,7 +104,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class='col-11 col-md-4'>
                             <div class="ch-item ch-img-3">
                                 <div class="ch-info">
                                     <h3>Festa</h3>
@@ -148,16 +124,16 @@
 
             </div>
 
-            <div id='nkw' class='row justify-content-center pt-4' style='height: 600px;'>
+            <div id='nkw' class='row justify-content-center pt-4'>
 
-                    <div class='col-5 text-center text-white  d-flex flex-column align-self-center p-5'>
+                    <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center p-5'>
                         <h1 class='titulo-topo '>NKW TECH</h1>
                         <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
-                        <button class='btn btn-one font-one mt-4'>Ver plataforma</button>
-                        <button class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</button>
+                        <a href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
+                        <a href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                     </div>
 
-                    <div class='col-6 justify-content-center d-flex '>
+                    <div class='col-10 col-md-6 justify-content-center d-flex '>
                         <img src='assets/img/foto.png' class=''>
                     </div>
 
@@ -173,38 +149,30 @@
                 
                     <div class='row col-8 text-white mt-2'> 
                     
-                        
-                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</button>
-                        
+                            <a class='btn btn-one font-one mt-1' href="Assets/img/teste.docx" download="Curriculo" ><i class="me-2 fa-solid fa-circle-user"></i>Curriculo</a>
 
+                            <a class='btn btn-one font-one mt-1' href='https://linkedin.com/in/wilmar-filho'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</a>
                         
-                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-github me-2"></i>Github</button>
-                        
-
+                            <a class='btn btn-one font-one mt-1' href='https://github.com/WilmarFilho'><i class="fa-brands fa-github me-2"></i>Github</a>
                     
-                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-instagram me-2"></i>Instagram</button>
+                            <a class='btn btn-one font-one mt-1' href='https://www.instagram.com/wilmar.filho1511/'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                         
-
-                        
-                            <button class='btn btn-one font-one mt-1'><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp</button>
-                        
-                    
                     </div>
                 </div>
              
             </div>
 
-            <div id='celleta' class='row justify-content-center pt-4' style='height: 600px;'>
+            <div id='celleta' class='row justify-content-center pt-4'>
 
-                    <div class='col-5 justify-content-center d-flex ' style='padding-right: 12rem;'>
+                    <div class='col-10 col-md-5 justify-content-center d-flex '>
                         <img src='assets/img/foto.png' class=''>
                     </div>
 
-                    <div class='col-5 text-center text-white  d-flex flex-column align-self-center' style='padding-right: 5rem;'>
+                    <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center'>
                         <h1 class='titulo-topo '>Celleta</h1>
                         <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
-                        <button class='btn btn-one font-one mt-4'>Ver loja</button>
-                        <button class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</button>
+                        <a href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
+                        <a href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                     </div>
             
             </div>
@@ -264,9 +232,202 @@
 
         </div>
 
-            <canvas class='matriz' id="idCanvas"> </canvas>
+        <div id='preloader'></div>
 
-            <script src='scripts/matriz.js'> </script>
+        <div class="loader">
+            <div class="gel center-gel">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c1 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c2 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c3 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c4 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c5 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c6 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            
+            <div class="gel c7 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            
+            <div class="gel c8 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c9 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c10 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c11 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c12 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c13 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c14 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c15 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c16 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c17 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c18 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c19 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c20 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c21 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c22 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c23 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c24 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c25 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c26 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c28 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c29 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c30 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c31 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c32 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c33 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c34 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c35 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c36 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c37 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+      
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        
+        <script src='scripts/matriz.js'> </script>
 
     </body>
 </html>

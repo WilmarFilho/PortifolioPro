@@ -3,9 +3,10 @@
 @media (max-width: 475.98px) {
 
     body {
-        background-image: url('../Assets/img/bg13.jpg') !important;
+        background-image: url('../Assets/img/bg16.jpg') !important;
        
-        
+        background-position: top !important;
+
     
         background-color: black !important;
     }
@@ -21,9 +22,9 @@
 @media (min-width: 475.99px) and (max-width: 575.98px) {
 
     body {
-        background-image: url('../Assets/img/bg2.jpg') !important;
+        background-image: url('../Assets/img/bg16.jpg') !important;
        
-        background-size: cover !important;
+        background-position: top !important;
     
         background-color: black !important;
     }
@@ -33,9 +34,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     body {
-        background-image: url('../Assets/img/bg2.jpg') !important;
+        background-image: url('../Assets/img/bg16.jpg') !important;
        
-        background-size: cover !important;
+        background-position: top !important;
     
         background-color: black !important;
     }
@@ -45,9 +46,9 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     body {
-        background-image: url('../Assets/img/bg1.jpg') !important;
+        background-image: url('../Assets/img/bg16.jpg') !important;
        
-        background-size: cover !important;
+       
     
         background-color: black !important;
     }
@@ -83,14 +84,12 @@
 body {
     background-image: url('../Assets/img/bg16.jpg');
    
-    background-position: right !important;
+    background-position: right;
 
     background-color: black !important;
 }
 
-#contato, #celleta {
-    height: 400px ;
-}
+
 
 #nkw {
   background-image: url('../Assets/img/bg17.jpg');
@@ -247,10 +246,16 @@ figure:hover+span {
     transition: all 0.3s;
     position: relative;
   }
-  .btn-one span {
+
+  .btn-tree {
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .btn-one span, .btn-tree span {
     transition: all 0.3s;
   }
-  .btn-one::before {
+  .btn-one::before, .btn-tree::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -268,14 +273,14 @@ figure:hover+span {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
   }
-  .btn-one:hover span {
+  .btn-one:hover span, .btn-tree:hover span {
     letter-spacing: 2px;
   }
-  .btn-one:hover::before {
+  .btn-one:hover::before, .btn-tree:hover::before {
     opacity: 1; 
     transform: scale(1, 1); 
   }
-  .btn-one::after {
+  .btn-one::after, .btn-tree::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -286,7 +291,7 @@ figure:hover+span {
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
   }
-  .btn-one:hover::after {
+  .btn-one:hover::after, .btn-tree.btn-one:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
   }
@@ -426,3 +431,388 @@ figure:hover+span {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
   }
+
+  .loader{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        top: 50%;
+        margin-top: -100px;
+        z-index: 200;
+      }
+      
+      .hex-brick{
+        background: #e9ecec;
+        width: 30px;
+        height: 17px;
+        position: absolute;
+        top: 5px;
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+      }
+      
+      .h2{
+        transform: rotate(60deg);
+        -webkit-transform: rotate(60deg);
+      }
+      
+      .h3{
+        transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+      }
+      
+      .gel{
+        height: 30px;
+        width: 30px;  
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      
+      .center-gel{
+        margin-left: -15px;
+        margin-top: -15px;
+        
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+      }
+      
+      .c1{
+        margin-left: -47px;
+        margin-top: -15px;
+      }
+      
+      .c2{
+        margin-left: -31px;
+        margin-top: -43px;
+      }
+      
+      .c3{
+        margin-left: 1px;
+        margin-top: -43px;
+      }
+      
+      .c4{
+        margin-left: 17px;
+        margin-top: -15px;
+      }
+      .c5{
+        margin-left: -31px;
+        margin-top: 13px;
+      }
+      
+      .c6{
+        margin-left: 1px;
+        margin-top: 13px;
+      }
+      
+      .c7{
+        margin-left: -63px;
+        margin-top: -43px;
+      }
+      
+      .c8{
+        margin-left: 33px;
+        margin-top: -43px;
+      }
+      
+      .c9{
+        margin-left: -15px;
+        margin-top: 41px;
+      }
+      
+      .c10{
+        margin-left: -63px;
+        margin-top: 13px;
+      }
+      
+      .c11{
+        margin-left: 33px;
+        margin-top: 13px;
+      }
+      
+      .c12{
+        margin-left: -15px;
+        margin-top: -71px;
+      }
+      
+      .c13{
+        margin-left: -47px;
+        margin-top: -71px;
+      }
+      
+      .c14{
+        margin-left: 17px;
+        margin-top: -71px;
+      }
+      
+      .c15{
+        margin-left: -47px;
+        margin-top: 41px;
+      }
+      
+      .c16{
+        margin-left: 17px;
+        margin-top: 41px;
+      }
+      
+      .c17{
+        margin-left: -79px;
+        margin-top: -15px;
+      }
+      
+      .c18{
+        margin-left: 49px;
+        margin-top: -15px;
+      }
+      
+      .c19{
+        margin-left: -63px;
+        margin-top: -99px;
+      }
+      
+      .c20{
+        margin-left: 33px;
+        margin-top: -99px;
+      }
+      
+      .c21{
+        margin-left: 1px;
+        margin-top: -99px;
+      }
+      
+      .c22{
+        margin-left: -31px;
+        margin-top: -99px;
+      }
+      
+      .c23{
+        margin-left: -63px;
+        margin-top: 69px;
+      }
+      
+      .c24{
+        margin-left: 33px;
+        margin-top: 69px;
+      }
+      
+      .c25{
+        margin-left: 1px;
+        margin-top: 69px;
+      }
+      
+      .c26{
+        margin-left: -31px;
+        margin-top: 69px;
+      }
+      
+      .c27{
+        margin-left: -79px;
+        margin-top: -15px;
+      }
+      
+      .c28{
+        margin-left: -95px;
+        margin-top: -43px;
+      }
+      
+      .c29{
+        margin-left: -95px;
+        margin-top: 13px;
+      }
+      
+      .c30{
+        margin-left: 49px;
+        margin-top: 41px;
+      }
+      
+      .c31{
+        margin-left: -79px;
+        margin-top: -71px;
+      }
+      
+      .c32{
+        margin-left: -111px;
+        margin-top: -15px;
+      }
+      
+      .c33{
+        margin-left: 65px;
+        margin-top: -43px;
+      }
+      
+      .c34{
+        margin-left: 65px;
+        margin-top: 13px;
+      }
+      
+      .c35{
+        margin-left: -79px;
+        margin-top: 41px;
+      }
+      
+      .c36{
+        margin-left: 49px;
+        margin-top: -71px;
+      }
+      
+      .c37{
+        margin-left: 81px;
+        margin-top: -15px;
+      }
+      
+      .r1{
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .2s;
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .2s;
+      }
+      
+      .r2{
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .4s;
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .4s;
+      }
+      
+      .r3{
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .6s;
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .6s;
+      }
+      
+      .r1 > .hex-brick{
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .2s;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .2s;
+      }
+      
+      .r2 > .hex-brick{
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .4s;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .4s;
+      }
+      
+      .r3 > .hex-brick{
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .6s;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .6s;
+      }
+      
+      
+      @keyframes pulse{
+        0%{
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        
+        50%{
+          -webkit-transform: scale(0.01);
+          transform: scale(0.01);
+        }
+        
+        100%{
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      
+      @keyframes fade{
+        0%{
+          background: #e9ecec;
+        }
+        
+        50%{
+          background: #e9ecec;
+        }
+        
+        100%{
+          background: #e9ecec;
+        }
+      }
+      
+      @-webkit-keyframes pulse{
+        0%{
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        
+        50%{
+          -webkit-transform: scale(0.01);
+          transform: scale(0.01);
+        }
+        
+        100%{
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      
+      @-webkit-keyframes fade{
+        0%{
+          background: #e9ecec;
+        }
+        
+        50%{
+          background: #e9ecec;
+        }
+        
+        100%{
+          background: #e9ecec;
+        }
+      }
+
+
+
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        z-index: 100;
+
+      }
