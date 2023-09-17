@@ -128,6 +128,13 @@ body {
     blink 800ms steps(13)  infinite normal;
     border-right: 5px solid rgb(235, 226, 226);
   }
+
+  .titulo-principal {
+    font-family: 'gentleman';
+    text-shadow: 0 0 1em  black;
+    font-size: 90px;
+    white-space: nowrap;
+  }
   
   @keyframes typewriter {
     from {

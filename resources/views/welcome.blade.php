@@ -69,7 +69,7 @@
                 
                 
                     <div class='col-10 col-md-6 justify-content-center d-flex '>
-                        <img src='assets/img/foto.png' class=''>
+                        <img src='{{asset('assets/img/foto.png')}}' class=''>
                     </div>
 
                     <div class='col-10 col-md-6 text-center text-white justify-content-center  d-flex flex-column align-self-center'>
@@ -127,14 +127,14 @@
             <div id='nkw' class='row justify-content-center pt-4'>
 
                     <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center p-5'>
-                        <h1 class='titulo-topo '>NKW TECH</h1>
+                        <h1 class='titulo-principal '>NKW TECH</h1>
                         <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
                         <a href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
                         <a href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                     </div>
 
                     <div class='col-10 col-md-6 justify-content-center d-flex '>
-                        <img src='assets/img/foto.png' class=''>
+                        <img src='{{asset('assets/img/foto.png')}}' class=''>
                     </div>
 
             </div>
@@ -165,11 +165,11 @@
             <div id='celleta' class='row justify-content-center pt-4'>
 
                     <div class='col-10 col-md-5 justify-content-center d-flex '>
-                        <img src='assets/img/foto.png' class=''>
+                        <img src='{{asset('assets/img/foto.png')}}' class=''>
                     </div>
 
                     <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center'>
-                        <h1 class='titulo-topo '>Celleta</h1>
+                        <h1 class='titulo-principal '>Celleta</h1>
                         <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
                         <a href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
                         <a href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
