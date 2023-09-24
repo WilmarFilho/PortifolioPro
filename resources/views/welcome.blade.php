@@ -28,406 +28,426 @@
     </head>
     <body class="antialiased">
 
-        <div id="app">
+            <div id="app" class='container-fluid'>
+            
+            <!-- Inicio Menu -->
+                <nav id='topo' class="navbar navbar-expand-md text-white navbar-dark bg-nav-custom shadow-sm">
+                    <div class="container row p-3">
+                        <a class="navbar-brand offset-md-1 offset-1 col-md-2 col-4" href="{{ url('/') }}">
+                            <img src='Assets/Img/logo.png' class='img-fluid' >
+                        </a>
+                        
+                        <button class="col-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarSupportedContent" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-            <nav id='topo' class="navbar navbar-expand-md text-white navbar-dark bg-nav-custom shadow-sm">
-                <div class="container row p-3">
-                    <a class="navbar-brand offset-md-1 offset-1 col-md-2 col-4" href="{{ url('/') }}">
-                        <img src='Assets/img/logo.png' class='img-fluid' >
-                    </a>
-                    
-                    <button class="col-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarSupportedContent" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <div class="collapse navbar-collapse" id="navegacao">
+                        
+                            <ul class="navbar-nav ms-auto text-white font-one">
+                            
+                                        <li class="nav-item">
+                                            <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="m-1 nav-link btn-tree" href="#projetos">{{ __('Projetos') }}</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#nkw">{{ __('NKW') }}</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#celleta">{{ __('Celleta') }}</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#contato">{{ __('Contato') }}</a>
+                                        </li>
+                                        
+                            </ul>
 
-                    <div class="collapse navbar-collapse" id="navegacao">
-                       
-                        <ul class="navbar-nav ms-auto text-white font-one">
-                           
-                                    <li class="nav-item">
-                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="m-1 nav-link btn-tree" href="#projetos">{{ __('Projetos') }}</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#nkw">{{ __('NKW') }}</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#celleta">{{ __('Celleta') }}</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#contato">{{ __('Contato') }}</a>
-                                    </li>
-                                    
+                        </div>
+                    </div>
+                </nav>
+            <!-- Inicio Carrosel -->
+                <div onclick="play1()" id='carrosel' class='row justify-content-center pt-5' >
+
+                        <div id='img-principal' class='col-9 col-md-6 col-lg-4 justify-content-center d-flex '>
+                            <img src='{{asset('Assets/Img/foto3.png')}}' class='img-fluid'>
+                        </div>
+
+                        <div id='div-principal' class='col-10 col-md-6 text-center text-white justify-content-center  d-flex flex-column align-self-center'>
+                            <h1 class='titulo-topo justify-content-center d-none d-md-block'>Desenvolvedor web</h1>
+                            <h1 class='titulo-topo justify-content-center d-md-none d-block'>Desenvolvedor <br> web</h1>
+                            <p class='texto text-center'>
+                                Prazer, me chamo Wilmar, sou um estudante de Ciências da Computação,
+                                Desenvolvedor Web e Empreendedor, com interesse em front-end, design
+                                e marketing sou obcecado em colaborar com o crescimento da minha atual 
+                                empresa, da minha equipe, dos meus clientes e promover meu crescimento pessoal.
+                            </P>
+                        </div>
+
+                </div>
+            <!-- Inicio Projetos -->
+                <div id='projetos' class='row align-items-center justify-content-center'>
+                    <div class='row col-11 pt-3 align-items-center justify-content-center caixa-projetos'>
+                        <div class='col-12 text-center text-white '>
+                            <h1 class='titulo-principal d-none d-md-block'>Projetos Recentes</h1>
+                            <h1 class='titulo-principal d-md-none d-block mb-4'>Projetos <br> Recentes</h1>
+                        </div>
+
+                        <ul id='lista-projetos' class="ch-grid row justify-content-center col-12">
+                            <li class='col-6 col-md-4'>
+                                <div class="ch-item ch-img-1">
+                                    <div class="ch-info">
+                                        <h3>NKW TECH</h3>
+                                        <p>por Wilmar Filho <a href="https://nkwtech.com">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class='col-6 col-md-4'>
+                                <div class="ch-item ch-img-2">
+                                    <div class="ch-info">
+                                        <h3>Caixa</h3>
+                                        <p>por Wilmar Filho <a href="https://caixa.nkwtech.com">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class='col-6 offset-3 col-md-4'>
+                                <div class="ch-item ch-img-3">
+                                    <div class="ch-info">
+                                        <h3>Festa</h3>
+                                        <p>por Wilmar Filho <a href="https://bot.nkwtech.com">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
 
-                    </div>
-                </div>
-            </nav>
-        
+                        <div id='conta-demo' class='col-12 text-center text-white font-one mt-4'>
+                            <h3 class='h3-conta-demo'>Conta para demonstração:</h3>
+                            <p class='p-conta-demo'>Login: demo@hotmail.com / Senha: Demo46.</p>
+                            
+                        </div>
 
-            <div id='carrosel' class='row justify-content-center pt-5' >
-
-                
-                
-                    <div class='col-10 col-md-6 justify-content-center d-flex '>
-                        <img src='{{asset('assets/img/foto.png')}}' class=''>
-                    </div>
-
-                    <div class='col-10 col-md-6 text-center text-white justify-content-center  d-flex flex-column align-self-center'>
-                        <h1 class='titulo-topo justify-content-center'>Desenvolvedor web</h1>
-                        <p class='texto text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
-                    </div>
-
-                
-
-            </div>
-
-            <div id='projetos' class='row align-items-center justify-content-center'>
-                <div class='row col-11 pt-3 align-items-center justify-content-center caixa-contato'>
-                    <div class='col-12 text-center text-white'>
-                        <h2 class='titulo-projetos font-gentleman'>Projetos Recentes</h2>
-                    </div>
-
-                    <ul class="ch-grid row justify-content-center col-12">
-                        <li class='col-11 col-md-4'>
-                            <div class="ch-item ch-img-1">
-                                <div class="ch-info">
-                                    <h3>NKW TECH</h3>
-                                    <p>por Wilmar Filho <a href="https://nkwtech.com">Saiba mais</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='col-11 col-md-4'>
-                            <div class="ch-item ch-img-2">
-                                <div class="ch-info">
-                                    <h3>Caixa</h3>
-                                    <p>por Wilmar Filho <a href="https://caixa.nkwtech.com">Saiba mais</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='col-11 col-md-4'>
-                            <div class="ch-item ch-img-3">
-                                <div class="ch-info">
-                                    <h3>Festa</h3>
-                                    <p>por Wilmar Filho <a href="https://bot.nkwtech.com">Saiba mais</a></p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class='col-12 text-center text-white'>
-                        <h3>Conta para demonstração:</h3>
-                        <p>Login: wilmarfilho32@hotmail.com</p>
-                        <p>Senha: Flamengo32</p>
                     </div>
 
                 </div>
+            <!-- Inicio NKW -->
+                <div onclick="play2()" id='nkw' class='row justify-content-center pt-4'>
 
-            </div>
+                        <div class='col-12 col-md-5 text-center text-white  d-flex flex-column align-self-center p-4'>
+                            <h1 class='titulo-principal '>NKW TECH</h1>
+                            <p class='texto'>
+                                Eu e mais dois amigos fascinados por esse mundo de computadores e tecnologia desde 
+                                cedo fundamos a NKW TECH, criada com o propósito de ajudar a todos, nós somos jovens empresários do interior de Goiás 
+                                prontos para revolucionar o Brasil no quesito de assistência 
+                                e consultoria técnica.
+                                <br>Conheça um pouco mais de nós clicando no botões abaixo!
+                            </P>
+                            <a href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
+                            <a href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                        </div>
 
-            <div id='nkw' class='row justify-content-center pt-4'>
+                        <div class='col-10 col-md-6 justify-content-center d-md-flex d-none '>
+                            <img src='{{asset('Assets/Img/foto2.png')}}' class=''>
+                        </div>
 
-                    <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center p-5'>
-                        <h1 class='titulo-principal '>NKW TECH</h1>
-                        <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
-                        <a href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
-                        <a href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
-                    </div>
-
-                    <div class='col-10 col-md-6 justify-content-center d-flex '>
-                        <img src='{{asset('assets/img/foto.png')}}' class=''>
-                    </div>
-
-            </div>
-
-            <div id='contato' class='row align-items-center justify-content-center'>
-                
-                <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'> 
-
-                    <div class='col-12 text-center text-white'>
-                        <h2 class='titulo-projetos font-gentleman'>Contato</h2>
-                    </div>
-                
-                    <div class='row col-8 text-white mt-2'> 
+                </div>
+            <!-- Inicio Contato -->
+                <div id='contato' class='row align-items-center justify-content-center'>
                     
-                            <a class='btn btn-one font-one mt-1' href="Assets/img/teste.docx" download="Curriculo" ><i class="me-2 fa-solid fa-circle-user"></i>Curriculo</a>
+                    <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'> 
 
-                            <a class='btn btn-one font-one mt-1' href='https://linkedin.com/in/wilmar-filho'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</a>
-                        
-                            <a class='btn btn-one font-one mt-1' href='https://github.com/WilmarFilho'><i class="fa-brands fa-github me-2"></i>Github</a>
+                        <div class='col-12 text-center text-white'>
+                            <h1 class='titulo-principal font-gentleman'>Contato</h1>
+                        </div>
                     
-                            <a class='btn btn-one font-one mt-1' href='https://www.instagram.com/wilmar.filho1511/'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                        <div class='row col-11 text-white mt-2'> 
                         
+                                <a class='btn btn-one font-one mt-1' href="Assets/img/teste.docx" download="Curriculo" ><i class="me-2 fa-solid fa-circle-user"></i>Curriculo</a>
+
+                                <a class='btn btn-one font-one mt-1' href='https://linkedin.com/in/wilmar-filho'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</a>
+                            
+                                <a class='btn btn-one font-one mt-1' href='https://github.com/WilmarFilho'><i class="fa-brands fa-github me-2"></i>Github</a>
+                        
+                                <a class='btn btn-one font-one mt-1' href='https://www.instagram.com/wilmar.filho1511/'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                            
+                        </div>
                     </div>
+                
                 </div>
-             
+            <!-- Inicio Celleta -->
+                <div onclick="play3()" id='celleta' class='row justify-content-center pt-4'>
+
+                        <div class='col-10 col-md-5 justify-content-center d-md-flex d-none '>
+                            <img src='{{asset('Assets/Img/foto1.png')}}' class=''>
+                        </div>
+
+                        <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center'>
+                            <h1 class='titulo-principal '>Celleta</h1>
+                            <p class='texto'>
+                                Criei a loja Celleta com a missão de resgatar a verdadeira essência masculina em meio a uma geração que parece estar perdendo suas raízes. Nela, promovemos a autenticidade e o crescimento pessoal, fortalecendo homens a abraçarem sua confiança, estética e alcançarem o sucesso que desejam.
+                                Cada produto que oferecemos reflete valores.Feita para homens autênticos resgatam a verdadeira essência masculina e se destacam com confiança, estética e sucesso.
+                                <br>Saiba mais clicando nos botões abaixo!
+                            </p>
+                            <a href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
+                            <a href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                        </div>
+                
+                </div>
+
             </div>
-
-            <div id='celleta' class='row justify-content-center pt-4'>
-
-                    <div class='col-10 col-md-5 justify-content-center d-flex '>
-                        <img src='{{asset('assets/img/foto.png')}}' class=''>
-                    </div>
-
-                    <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center'>
-                        <h1 class='titulo-principal '>Celleta</h1>
-                        <p class='texto'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </P>
-                        <a href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
-                        <a href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
-                    </div>
-            
-            </div>
-
             
             <!-- Inicio Rodape -->
-			<footer id="rodape" class=''> 
+            <footer id="rodape" class='mt-5'> 
 
-				<div class="row align-items-center  py-4 text-center" style='border-bottom: 2px solid gray; font-family: one'>
-					
-					<div class=" col-md-4 col-12   text-light">
-						<h4>Menu</h4>
-						<ul class="navbar-nav nav-rodape flex-row justify-content-center text-white-50" style='flex-'>
-                                <li class="nav-item text-center px-2">
-                                    <a class="nav-link rolagem" href="">{{ __('Projetos') }}</a> 
-                                </li>
-								<li class="nav-item text-center">
-                                    <a class="nav-link rolagem px-2" href="">{{ __('NKW') }}</a> 
-                                </li>
-                                <li class="nav-item text-center">
-                                    <a class="nav-link rolagem px-2" href="">{{ __('Celleta') }}</a> 
-                                </li>
-								<li class="nav-item ">
-                                    <a class="nav-link px-2" href="">{{ __('Curriculo') }}</a> 
-                                </li>
-                    	</ul>
-					</div>
-					
-					<div class="col-md-4 col-12 text-white mt-2">
-						<h4>Sobre Mim</h4>
-						
-						<p class='text-white-50 p-2'>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specim
-						</p>
+                    <div class="row align-items-center  py-4 text-center topo-rodape" style='border-top: 2px solid gray; font-family: one'>
+                        
+                        <div class=" d-none d-md-block col-md-4 col-12   text-light">
+                            <h4>Menu</h4>
+                            <ul class="navbar-nav nav-rodape flex-row justify-content-center text-white-50" style='flex-'>
+                                    <li class="nav-item text-center px-2">
+                                        <a class="nav-link rolagem" href="">{{ __('Projetos') }}</a> 
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link rolagem px-2" href="">{{ __('NKW') }}</a> 
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link rolagem px-2" href="">{{ __('Celleta') }}</a> 
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link px-2" href="">{{ __('Curriculo') }}</a> 
+                                    </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="d-none d-md-block col-md-4 col-10 offset-1 offset-md-0 text-white mt-2">
+                            <h4>Sobre Mim</h4>
+                            
+                            <p class='text-white-50 p-2'>
+                                Sou disciplinado e focado para me tornar melhor a cada dia, seja na vida profissional ou pessoal.
+                            </p>
 
-					</div>
+                        </div>
 
-					<div class="col-md-2 offset-md-1 col-12 ">
-						<img src="Assets/img/logo.png" class="img-fluid">
-					</div>
-				</div>
-				
-				<div class='row justify-content-center '>
-					<div class="ml-2 mt-3 col-6   text-light text-center">
-						<p class=''>Copyright (c) 2023 Wilmar Filho -  Todos os direitos reservados
-						</p>
-						<p>wilmarfilho32@hotmail.com</p>
-						<div class='mb-2'>
-							<a href='https://www.instagram.com/wilmar.filho1511/' class='btn btn-light'><i class="fa-brands fa-instagram"></i></a>
-						</div>
-					</div>
+                        <div class="col-md-2 offset-md-1 col-6 offset-3 ">
+                            <img src="Assets/Img/logo.png" class="img-fluid">
+                        </div>
+                    </div>
 
-				</div>
-				
-			</footer> 
-			<!-- Fim Rodape -->
+                    <hr>
+                    
+                    <div class='row justify-content-center mb-3'>
+                        <div class="ml-2 mt-3 col-6   text-light text-center">
+                            <p class='p-rodape'>Copyright (c) 2023 Wilmar Filho -  Todos os direitos reservados
+                            </p>
+                            <p class='p-rodape'>wilmarfilho32@hotmail.com</p>
+                            <div class='mb-2'>
+                                <a href='https://www.instagram.com/wilmar.filho1511/' class='btn btn-light'><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
 
-        </div>
-
-        <div id='preloader'></div>
-
-        <div class="loader">
-            <div class="gel center-gel">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c1 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c2 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c3 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c4 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c5 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c6 r1">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
+                    </div>
+                    
+            </footer> 
             
-            <div class="gel c7 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            
-            <div class="gel c8 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c9 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c10 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c11 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c12 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c13 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c14 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c15 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c16 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c17 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c18 r2">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c19 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c20 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c21 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c22 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c23 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c24 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c25 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c26 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c28 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c29 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c30 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c31 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c32 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c33 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c34 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c35 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c36 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-            <div class="gel c37 r3">
-                <div class="hex-brick h1"></div>
-                <div class="hex-brick h2"></div>
-                <div class="hex-brick h3"></div>
-            </div>
-      
-        </div>
+            <!-- Pre Loader -->
+            <div id='preloader'></div>
 
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <!-- Loader  -->
+            <div class="loader">
+                <div class="gel center-gel">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c1 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c2 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c3 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c4 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c5 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c6 r1">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                
+                <div class="gel c7 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                
+                <div class="gel c8 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c9 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c10 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c11 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c12 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c13 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c14 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c15 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c16 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c17 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c18 r2">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c19 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c20 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c21 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c22 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c23 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c24 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c25 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c26 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c28 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c29 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c30 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c31 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c32 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c33 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c34 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c35 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c36 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
+                <div class="gel c37 r3">
+                    <div class="hex-brick h1"></div>
+                    <div class="hex-brick h2"></div>
+                    <div class="hex-brick h3"></div>
+                </div>
         
-        <script src='scripts/matriz.js'> </script>
+            </div> 
+
+            <!-- Musicas -->
+            <audio  id='music1' class='d-none' src="Assets/Music/1.mp3" controls></audio>
+            <audio  id='music2' class='d-none' src="Assets/Music/2.mp3" controls></audio>
+            <audio  id='music3' class='d-none' src="Assets/Music/3.mp3" controls></audio>
+
+            <!-- Scripts -->
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <script src='scripts/matriz.js'> </script>
 
     </body>
 </html>

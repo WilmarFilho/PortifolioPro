@@ -1,9 +1,124 @@
 /*Responsividade*/
 
-@media (max-width: 475.98px) {
+@media (max-width: 350.98px) {
+
+  html {
+    --bs-gutter-x: 2.5rem !important;
+    width: 100% !important;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    margin-left: -10px !important;
+  }
+
+  div.caixa-projetos {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  body {
+      background-image: url('../Assets/Img/bg16.jpg') !important;
+     
+      background-position: bottom !important;
+
+  
+      background-color: black !important;
+  }
+
+  #carrosel {
+    
+    background-image: url('../Assets/Img/bg16.jpg') !important;  
+    background-position: top !important;
+
+  }
+
+  ul#lista-projetos > * {
+    padding-right: 1px !important;
+    padding-left: 1px !important;
+  }
+
+  p.p-conta-demo {
+    font-size: 10px;
+  }
+
+  h3.h3-conta-demo {
+    font-size: 15px;
+  }
+
+  h1.titulo-topo {
+    font-size: 36px;
+    margin-top: 5px;
+  }
+
+  h1.titulo-principal {
+    font-size: 30px;
+    
+  }
+
+  p.texto {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  
+
+  p.p-rodape {
+    font-size: 10px;
+  }
+
+  div.topo-rodape {
+    font-size: 10px;
+  }
+
+  .ch-grid li {
+    width: 50% !important;
+    height: 150px !important;
+    display: inline-block;
+    margin: 0px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  div.ch-img-1 { 
+    background-size: cover;
+  }
+  
+  div.ch-img-2 { 
+    background-size: cover;
+  }
+  
+  div.ch-img-3 { 
+    background-size: cover;
+  }
+
+  div.ch-item {
+    box-shadow: 
+      inset 0 0 0 0 rgba(0, 0, 0, 0.8),
+      inset 0 0 0 4px rgba(255,255,255,0.6),
+      0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  div.ch-item:hover {
+    box-shadow: 
+      inset 0 0 0 110px rgba(0, 0, 0, 0.8),
+      inset 0 0 0 4px rgba(255,255,255,0.8),
+      0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .ch-info h3 {
+    font-size: 15px !important;
+    padding: 35px 0 0 0 !important;
+    height: auto !important ;
+  }
+  
+  .ch-info p {
+    padding: 10px 5px !important;
+    font-size: 8px !important;
+  }
+
+}
+
+@media (min-width: 351.99px) and (max-width: 475.98px) {
 
     body {
-        background-image: url('../Assets/img/bg16.jpg') !important;
+        background-image: url('../Assets/Img/bg16.jpg') !important;
        
         background-position: top !important;
 
@@ -11,10 +126,75 @@
         background-color: black !important;
     }
 
-    html {
+    h1.titulo-topo {
+      font-size: 57px;
+      margin-top: 5px;
+    }
 
-        margin: -5px;
+    h1.titulo-principal {
+      font-size: 40px;
+      
+    }
+
+    p.texto {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
     
+
+    p.p-rodape {
+      font-size: 13px;
+    }
+
+    div.topo-rodape {
+      font-size: 15px;
+    }
+
+    .ch-grid li {
+      width: 50% !important;
+      height: 150px !important;
+      display: inline-block;
+      margin: 0px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    div.ch-img-1 { 
+      background-size: cover;
+    }
+    
+    div.ch-img-2 { 
+      background-size: cover;
+    }
+    
+    div.ch-img-3 { 
+      background-size: cover;
+    }
+
+    div.ch-item {
+      box-shadow: 
+        inset 0 0 0 0 rgba(0, 0, 0, 0.8),
+        inset 0 0 0 4px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.ch-item:hover {
+      box-shadow: 
+        inset 0 0 0 110px rgba(0, 0, 0, 0.8),
+        inset 0 0 0 4px rgba(255,255,255,0.8),
+        0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .ch-info h3 {
+      font-size: 15px !important;
+      padding: 35px 0 0 0 !important;
+      height: auto !important ;
+    }
+    
+    .ch-info p {
+      padding: 10px 5px !important;
+      font-size: 8px !important;
     }
 
 }
@@ -22,7 +202,7 @@
 @media (min-width: 475.99px) and (max-width: 575.98px) {
 
     body {
-        background-image: url('../Assets/img/bg16.jpg') !important;
+        background-image: url('../Assets/Img/bg16.jpg') !important;
        
         background-position: top !important;
     
@@ -34,7 +214,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     body {
-        background-image: url('../Assets/img/bg16.jpg') !important;
+        background-image: url('../Assets/Img/bg16.jpg') !important;
        
         background-position: top !important;
     
@@ -46,7 +226,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     body {
-        background-image: url('../Assets/img/bg16.jpg') !important;
+        background-image: url('../Assets/Img/bg16.jpg') !important;
        
        
     
@@ -63,14 +243,16 @@
 
 /*  GERAL */
 
+
+
 @font-face {
 	font-family: one;
-	src: url('../Assets/fonts/one.woff');
+	src: url('../Assets/Fonts/one.woff');
 }
 
 @font-face {
 	font-family: gentleman;
-	src: url('../Assets/fonts/fonte.woff');
+	src: url('../Assets/Fonts/fonte.woff');
 }
 
 .font-one {
@@ -82,7 +264,7 @@
 }
 
 body {
-    background-image: url('../Assets/img/bg16.jpg');
+    background-image: url('../Assets/Img/bg16.jpg');
    
     background-position: right;
 
@@ -91,15 +273,16 @@ body {
 
 
 
+
 #nkw {
-  background-image: url('../Assets/img/bg17.jpg');
+  background-image: url('../Assets/Img/bg17.jpg');
   background-position: unset;
   background-size: cover;
 }
 
 #projetos, #contato {
     
-    background-image: url('../Assets/img/bg11.jpg');
+    background-image: url('../Assets/Img/bg11.jpg');
     background-size: contain;
     background-attachment: fixed;
 }
@@ -117,6 +300,13 @@ body {
 }
 
 /* Topo */
+
+
+#img-principal, #div-principal, #projetos, #nkw, #contato, #celleta {
+  position: relative;
+  top: 200px;
+  opacity: 0;
+}
 
 .titulo-topo {
     font-family: 'gentleman';
@@ -350,21 +540,21 @@ figure:hover+span {
 
 
   .ch-img-1 { 
-    background-image: url(../Assets/img/nkw.png);
+    background-image: url(../Assets/Img/nkw.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
   }
   
   .ch-img-2 { 
-    background-image: url(../Assets/img/caixa.png);
+    background-image: url(../Assets/Img/caixa.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
   }
   
   .ch-img-3 { 
-    background-image: url(../Assets/img/festa.png);
+    background-image: url(../Assets/Img/festa.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
@@ -434,9 +624,10 @@ figure:hover+span {
     transform: scale(1);	
   }
 
-  .caixa-contato {
+  .caixa-contato, .caixa-projetos {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
+    margin: 30px !important;
   }
 
   .loader{
