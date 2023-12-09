@@ -255,12 +255,17 @@
 	src: url('../Assets/Fonts/fonte.woff');
 }
 
+@font-face {
+	font-family: montserat;
+	src: url('../Assets/Fonts/montserat.woff');
+}
+
 .font-one {
     font-family: 'one' !important;
 }
 
 .font-gentleman {
-    font-family: 'gentleman' !important;
+    font-family: 'montserat' !important;
 }
 
 body {
@@ -275,14 +280,13 @@ body {
 
 
 #nkw {
-  background-image: url('../Assets/Img/bg17.jpg');
+  background-image: linear-gradient( to right bottom, rgb(0,0,0, 0.9), rgba(0, 0, 0, 0.8) ), url('../Assets/Img/bg17.jpg');
   background-position: unset;
   background-size: cover;
 }
 
 #projetos, #contato {
-    
-    background-image: url('../Assets/Img/bg11.jpg');
+    background-image: linear-gradient( to right bottom, rgb(0,0,0, 0.9), rgba(2, 2, 2, 0.8) ), url('../Assets/Img/bg11.jpg');
     background-size: contain;
     background-attachment: fixed;
 }
@@ -296,7 +300,12 @@ body {
 /* Rodapé */
 
 #rodape {
-    background-color: black;
+    background-color: rgb(4, 4, 4);
+}
+
+#legenda-rodape {
+  border-top: 1px solid darkgray ;
+  width: 80%;
 }
 
 /* Topo */
@@ -309,7 +318,7 @@ body {
 }
 
 .titulo-topo {
-    font-family: 'gentleman';
+    font-family: 'montserat';
     text-shadow: 0 0 1em  black;
     font-size: 90px;
     white-space: nowrap;
@@ -320,7 +329,7 @@ body {
   }
 
   .titulo-principal {
-    font-family: 'gentleman';
+    font-family: 'montserat';
     text-shadow: 0 0 1em  black;
     font-size: 90px;
     white-space: nowrap;
@@ -625,8 +634,6 @@ figure:hover+span {
   }
 
   .caixa-contato, .caixa-projetos {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
     margin: 30px !important;
   }
 

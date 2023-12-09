@@ -31,21 +31,24 @@
             <div id="app" class='container-fluid'>
             
             <!-- Inicio Menu -->
-                <nav id='topo' class="navbar navbar-expand-md text-white navbar-dark bg-nav-custom shadow-sm">
-                    <div class="container row p-3">
-                        <a class="navbar-brand offset-md-1 offset-1 col-md-2 col-4" href="{{ url('/') }}">
-                            <img src='Assets/Img/logo.png' class='img-fluid' >
-                        </a>
-                        
-                        <button class="col-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarSupportedContent" aria-expanded="false">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+            <header id='cabeçalho container row'>	 <!-- cabecalho -->
+				
+				<nav class="row col-12 justify-content-between navbar navbar-expand-md navbar-dark bg-nav-custom shadow-sm py-5 " >
+				
+						
+						<div class='col-6 row navbar-brand justify-content-center'>
+							<a id='btn-login' class='col-12 col-md-4' href="">
+								<img class='img-fluid' src='{{asset("Assets/Img/logo.png")}}'>
+							</a>
+						</div>
 
-                        <div class="collapse navbar-collapse" id="navegacao">
-                        
-                            <ul class="navbar-nav ms-auto text-white font-one">
-                            
-                                        <li class="nav-item">
+						<button class="navbar-toggler col-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0" style='margin-left: auto !important'>
+								        <li class="nav-item">
                                             <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="m-1 nav-link btn-tree" href="#projetos">{{ __('Projetos') }}</a>
                                         </li>
                                         <li class="nav-item">
@@ -57,14 +60,15 @@
                                         <li class="nav-item">
                                             <a style='color: rgba(255, 255, 255, 0.55) !immportant;' class="nav-link btn-tree m-1" href="#contato">{{ __('Contato') }}</a>
                                         </li>
-                                        
-                            </ul>
+							</ul>
+						</div>
 
-                        </div>
-                    </div>
-                </nav>
+					
+				</nav>
+
+			</header>
             <!-- Inicio Carrosel -->
-                <div onclick="play1()" id='carrosel' class='row justify-content-center pt-5' >
+                <div onclick="play1()" id='carrosel' class='row  pt-5' style='justify-content: space-around !important;'>
 
                         <div id='img-principal' class='col-9 col-md-6 col-lg-4 justify-content-center d-flex '>
                             <img src='{{asset('Assets/Img/foto3.png')}}' class='img-fluid'>
@@ -86,16 +90,15 @@
                 <div id='projetos' class='row align-items-center justify-content-center'>
                     <div class='row col-11 pt-3 align-items-center justify-content-center caixa-projetos'>
                         <div class='col-12 text-center text-white '>
-                            <h1 class='titulo-principal d-none d-md-block'>Projetos Recentes</h1>
-                            <h1 class='titulo-principal d-md-none d-block mb-4'>Projetos <br> Recentes</h1>
+                            <img src="https://wilmar.nkwtech.com/Assets/Img/projetos.png">
                         </div>
 
-                        <ul id='lista-projetos' class="ch-grid row justify-content-center col-12">
+                        <ul id='lista-projetos' class="ch-grid row justify-content-center col-12 mt-4">
                             <li class='col-6 col-md-4'>
                                 <div class="ch-item ch-img-1">
                                     <div class="ch-info">
                                         <h3>NKW TECH</h3>
-                                        <p>por Wilmar Filho <a href="https://nkwtech.com">Saiba mais</a></p>
+                                        <p>por Wilmar Filho <a target='_blank' href="https://nkwtech.com">Saiba mais</a></p>
                                     </div>
                                 </div>
                             </li>
@@ -103,7 +106,7 @@
                                 <div class="ch-item ch-img-2">
                                     <div class="ch-info">
                                         <h3>Caixa</h3>
-                                        <p>por Wilmar Filho <a href="https://caixa.nkwtech.com">Saiba mais</a></p>
+                                        <p>por Wilmar Filho <a target='_blank' href="https://caixa.nkwtech.com">Saiba mais</a></p>
                                     </div>
                                 </div>
                             </li>
@@ -111,13 +114,13 @@
                                 <div class="ch-item ch-img-3">
                                     <div class="ch-info">
                                         <h3>Festa</h3>
-                                        <p>por Wilmar Filho <a href="https://bot.nkwtech.com">Saiba mais</a></p>
+                                        <p>por Wilmar Filho <a target='_blank' href="https://bot.nkwtech.com">Saiba mais</a></p>
                                     </div>
                                 </div>
                             </li>
                         </ul>
 
-                        <div id='conta-demo' class='col-12 text-center text-white font-one mt-4'>
+                        <div id='conta-demo' class='col-12 text-center text-white font-one mt-5'>
                             <h3 class='h3-conta-demo'>Conta para demonstração:</h3>
                             <p class='p-conta-demo'>Login: demo@hotmail.com / Senha: Demo46.</p>
                             
@@ -130,16 +133,16 @@
                 <div onclick="play2()" id='nkw' class='row justify-content-center pt-4'>
 
                         <div class='col-12 col-md-5 text-center text-white  d-flex flex-column align-self-center p-4'>
-                            <h1 class='titulo-principal '>NKW TECH</h1>
-                            <p class='texto'>
+                            <img class='align-self-center col-md-7 col-11  justify-content-center' src='Assets/Img/nkwl.png'>
+                            <p class='texto mt-3'>
                                 Eu e mais dois amigos fascinados por esse mundo de computadores e tecnologia desde 
                                 cedo fundamos a NKW TECH, criada com o propósito de ajudar a todos, nós somos jovens empresários do interior de Goiás 
                                 prontos para revolucionar o Brasil no quesito de assistência 
                                 e consultoria técnica.
                                 <br>Conheça um pouco mais de nós clicando no botões abaixo!
                             </P>
-                            <a href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
-                            <a href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                            <a target='_blank' href='https://nkwtech.com' class='btn btn-one font-one mt-4'>Ver plataforma</a>
+                            <a target='_blank' href='https://www.instagram.com/nkw_tech/' class='btn btn-one font-one mt-3'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                         </div>
 
                         <div class='col-10 col-md-6 justify-content-center d-md-flex d-none '>
@@ -150,21 +153,21 @@
             <!-- Inicio Contato -->
                 <div id='contato' class='row align-items-center justify-content-center'>
                     
-                    <div class='row p-5 col-10 align-items-center justify-content-center caixa-contato'> 
+                    <div class='row p-5 col-md-10 col-12 align-items-center justify-content-center caixa-contato'> 
 
                         <div class='col-12 text-center text-white'>
-                            <h1 class='titulo-principal font-gentleman'>Contato</h1>
+                            <img src="https://wilmar.nkwtech.com/Assets/Img/contato.png">
                         </div>
                     
-                        <div class='row col-11 text-white mt-2'> 
+                        <div class='row col-11 text-white mt-5'> 
                         
-                                <a class='btn btn-one font-one mt-1' href="Assets/img/teste.docx" download="Curriculo" ><i class="me-2 fa-solid fa-circle-user"></i>Curriculo</a>
+                                <a target='_blank' class='btn btn-one font-one mt-1' href="Assets/img/teste.docx" download="Curriculo" ><i class="me-2 fa-solid fa-circle-user"></i>Curriculo</a>
 
-                                <a class='btn btn-one font-one mt-1' href='https://linkedin.com/in/wilmar-filho'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</a>
+                                <a target='_blank' class='btn btn-one font-one mt-1' href='https://linkedin.com/in/wilmar-filho'><i class="fa-brands fa-linkedin me-2"></i>Linkedin</a>
                             
-                                <a class='btn btn-one font-one mt-1' href='https://github.com/WilmarFilho'><i class="fa-brands fa-github me-2"></i>Github</a>
+                                <a target='_blank' class='btn btn-one font-one mt-1' href='https://github.com/WilmarFilho'><i class="fa-brands fa-github me-2"></i>Github</a>
                         
-                                <a class='btn btn-one font-one mt-1' href='https://www.instagram.com/wilmar.filho1511/'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                                <a target='_blank' class='btn btn-one font-one mt-1' href='https://www.instagram.com/wilmar.filho1511/'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                             
                         </div>
                     </div>
@@ -173,19 +176,19 @@
             <!-- Inicio Celleta -->
                 <div onclick="play3()" id='celleta' class='row justify-content-center pt-4'>
 
-                        <div class='col-10 col-md-5 justify-content-center d-md-flex d-none '>
+                        <div class='col-10 col-md-6 justify-content-center d-md-flex d-none '>
                             <img src='{{asset('Assets/Img/foto1.png')}}' class=''>
                         </div>
 
-                        <div class='col-10 col-md-5 text-center text-white  d-flex flex-column align-self-center'>
-                            <h1 class='titulo-principal '>Celleta</h1>
-                            <p class='texto'>
-                                Criei a loja Celleta com a missão de resgatar a verdadeira essência masculina em meio a uma geração que parece estar perdendo suas raízes. Nela, promovemos a autenticidade e o crescimento pessoal, fortalecendo homens a abraçarem sua confiança, estética e alcançarem o sucesso que desejam.
-                                Cada produto que oferecemos reflete valores.Feita para homens autênticos resgatam a verdadeira essência masculina e se destacam com confiança, estética e sucesso.
+                        <div class='col-12 col-md-5 text-center text-white  d-flex flex-column align-self-center row mb-5'>
+                            <img class='align-self-center col-md-7 col-12  justify-content-center' src='Assets/Img/celleta.png'>
+                            <p class='mt-3  texto'>
+                                Criei a loja Celleta com a missão de resgatar a verdadeira essência masculina em meio a uma geração que parece estar perdendo suas raízes. 
+                                Nela, promovemos a autenticidade e o crescimento pessoal, fortalecendo homens a abraçarem sua confiança, estética e alcançarem o sucesso que desejam.
                                 <br>Saiba mais clicando nos botões abaixo!
                             </p>
-                            <a href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
-                            <a href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+                            <a target='_blank' href='https://celleta.com.br' class='btn btn-one font-one mt-4'>Ver loja</a>
+                            <a target='_blank' href='https://www.instagram.com/celleta.brasil/' class='btn btn-one font-one mt-2'><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
                         </div>
                 
                 </div>
@@ -193,9 +196,11 @@
             </div>
             
             <!-- Inicio Rodape -->
-            <footer id="rodape" class='mt-5'> 
+            <footer id="rodape" class=''> 
 
-                    <div class="row align-items-center  py-4 text-center topo-rodape" style='border-top: 2px solid gray; font-family: one'>
+                     <style> .row {margin-left: 1px !important; margin-right: 1px !important} </style>
+
+                    <div class="row align-items-center  py-4 text-center topo-rodape" style=''>
                         
                         <div class=" d-none d-md-block col-md-4 col-12   text-light">
                             <h4>Menu</h4>
@@ -229,16 +234,14 @@
                         </div>
                     </div>
 
-                    <hr>
+                   
                     
-                    <div class='row justify-content-center mb-3'>
-                        <div class="ml-2 mt-3 col-6   text-light text-center">
-                            <p class='p-rodape'>Copyright (c) 2023 Wilmar Filho -  Todos os direitos reservados
+                    <div  class='row justify-content-center'>
+                        <div id='legenda-rodape' class="ml-2 mt-3 col-md-6 col-10  pt-3 text-light text-center">
+                            <p class='p-rodape'>Copyright (c) 2023 Wilmar Filho -  Todos os direitos reservados <a href='https://www.instagram.com/wilmar.filho1511/' class=' mx-2 btn btn-light'><i class="fa-brands fa-instagram"></i></a>
                             </p>
-                            <p class='p-rodape'>wilmarfilho32@hotmail.com</p>
-                            <div class='mb-2'>
-                                <a href='https://www.instagram.com/wilmar.filho1511/' class='btn btn-light'><i class="fa-brands fa-instagram"></i></a>
-                            </div>
+                         
+                           
                         </div>
 
                     </div>
